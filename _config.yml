@@ -14,14 +14,14 @@ title                    : "4brunu.github.io"
 title_separator          : "-"
 name                     : "Bruno Coelho"
 description              : "iOS, Android and Code"
-url                      : https://4brunu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://4brunu.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : 4brunu/4brunu.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+repository               : "4brunu/4brunu.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : "/assets/images/blog_front_page.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : 4brunu-github-io # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -58,7 +58,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : 4brunu
+  username               : "4brunu"
 facebook:
   username               :
   app_id                 :
@@ -73,15 +73,15 @@ social:
 
 # Analytics
 analytics:
-  provider               : google # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-76819575-1
+    tracking_id          : "UA-76819575-1"
 
 
 # Site Author
 author:
   name             : "Bruno Coelho"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "iOS and Android Developer"
   location         : "Portugal"
   email            :
@@ -92,18 +92,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : 4brunu
+  github           : "4brunu"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : 4brunu
+  linkedin         : "4brunu"
   pinterest        :
   soundcloud       :
-  stackoverflow    : 976628/bruno-coelho # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  stackoverflow    : "976628/bruno-coelho" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : 4brunu
+  twitter          : "4brunu"
   vine             :
   weibo            :
   xing             :
