@@ -12,12 +12,13 @@ require 'yaml'
 CONFIG = YAML.load(File.read('_config.yml'))
 USERNAME = CONFIG["username"]
 REPO = CONFIG["repo"]
-SOURCE_BRANCH = CONFIG["branch"]
+SOURCE_BRANCH = CONFIG["source_branch"]
 DESTINATION_BRANCH = "gh-pages"
+DESTINATION_DIRECTORY = "../temp-pages/"
 
 def check_destination
-  unless Dir.exist? CONFIG["destination"]
-    sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
+  unless Dir.exist? DESTINATION_DIRECTORY
+    sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{DESTINATION_DIRECTORY}"
   end
 end
 
@@ -59,14 +60,14 @@ namespace :site do
 
     sh "git checkout #{SOURCE_BRANCH}"
     # sh "git checkout 1b511228756d84997b191a57a6fe2bb936073639"
-    Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
+    Dir.chdir(DESTINATION_DIRECTORY) { sh "git checkout #{DESTINATION_BRANCH}" }
 
     # Generate the site
     sh "bundle exec jekyll build"
 
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
-    Dir.chdir(CONFIG["destination"]) do
+    Dir.chdir(DESTINATION_DIRECTORY) do
       # check if there is anything to add and commit, and pushes it
       sh "if [ -n '$(git status)' ]; then
             git add --all .;
