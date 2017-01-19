@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # gem 'github-pages', '115', group: :jekyll_plugins
-# gem 'jekyll', '3.3.0', group: :jekyll_plugins
-gem 'jekyll', '3.3.0'
-# gem 'rake', '12.0.0'
+# gem 'jekyll', '3.3.1', group: :jekyll_plugins
+gem 'jekyll', '3.3.1'
+gem 'rake', '12.0.0'
 gem 'minimal-mistakes-jekyll', '4.1.1'
 
 # group :jekyll_plugins do
