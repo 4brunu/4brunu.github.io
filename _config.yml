@@ -265,3 +265,4 @@ defaults:
 username: 4brunu
 repo: 4brunu.github.io
 source_branch: master
+destination: ../gh-pages/
