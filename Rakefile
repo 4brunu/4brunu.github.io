@@ -52,18 +52,18 @@ namespace :site do
     # sh "ls _site"
 
     # Commit and push to github
-    sha = `git log`.match(/[a-z0-9]{40}/)[0]
-    Dir.chdir("_site") do
-      sh "pwd"
-      sh "ls"
-      # check if there is anything to add and commit, and pushes it
-      sh "if [ -n '$(git status)' ]; then
-            git add --all .;
-            git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.';
-            git push --quiet origin #{DESTINATION_BRANCH};
-         fi"
-      puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
-    end
+    # sha = `git log`.match(/[a-z0-9]{40}/)[0]
+    # Dir.chdir("_site") do
+    #   sh "pwd"
+    #   sh "ls"
+    #   # check if there is anything to add and commit, and pushes it
+    #   sh "if [ -n '$(git status)' ]; then
+    #         git add --all .;
+    #         git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.';
+    #         git push --quiet origin #{DESTINATION_BRANCH};
+    #      fi"
+    #   puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
+    # end
 
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
