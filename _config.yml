@@ -244,12 +244,19 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: default # single
+      layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 
 # Settings for builing master branch with travis-ci
