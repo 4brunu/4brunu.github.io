@@ -264,5 +264,6 @@ defaults:
 # or "master" otherwise
 username: 4brunu
 repo: 4brunu.github.io
-source_branch: master
+source_branch: source
+destination_brach: master
 destination: ../gh-pages/
