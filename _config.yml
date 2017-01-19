@@ -6,7 +6,6 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 theme: minimal-mistakes-jekyll
-# theme: minima
 
 # Site Settings
 locale                   : "en"
