@@ -50,7 +50,8 @@ namespace :site do
     sh "pwd"
     sh "ls"
     sh "ls _site"
-    sh "cd _site/"
+    # sh "cd _site/"
+    Dir.chdir('_site')
     sh "ls"
 
     # Commit and push to github
