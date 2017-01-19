@@ -49,6 +49,7 @@ namespace :site do
 
     sh "pwd"
     sh "ls"
+    sh "ls _site"
 
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
