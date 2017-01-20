@@ -21,6 +21,15 @@ inicio 3
 {% endfor %}
 fim 3
 
+inicio 4
+<!-- Get the tag name for every tag on the site and set them
+to the `site_tags` variable. -->
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+
+<!-- `tag_words` is a sorted array of the tag names. -->
+{% assign tag_words = site_tags | split:',' | sort %}
+fim 4
+
 {% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %}
