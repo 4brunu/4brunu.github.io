@@ -16,7 +16,7 @@ description              : "iOS, Android and Code"
 url                      : "https://4brunu.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "4brunu/4brunu.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/blog_front_page.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -81,7 +81,7 @@ analytics:
 author:
   name             : "Bruno Coelho"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "iOS and Android Developer"
+  bio              : "Software Engineer | iOS | Android"
   location         : "Portugal"
   email            :
   uri              :
