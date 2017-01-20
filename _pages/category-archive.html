@@ -10,15 +10,17 @@ author_profile: true
 {% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign categories_list = site_categories | split:',' | sort %}
 
-<p class="page__taxonomy">
-  <span itemprop="keywords">
-    {% for item in (0..site.categories.size) %}{% unless forloop.last %}
-      {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
-      <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | absolute_url }}" class="page__taxonomy-item" rel="tag">{{ this_word }}
-        <span>({{ site.categories[this_word].size }})</span>
-      </a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
-    {% endunless %}{% endfor %}
-  </span>
+<p class="page__meta">
+  <p class="page__taxonomy">
+    <span itemprop="keywords">
+      {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+        {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
+        <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | absolute_url }}" class="page__taxonomy-item" rel="tag">{{ this_word }}
+          <span>({{ site.categories[this_word].size }})</span>
+        </a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      {% endunless %}{% endfor %}
+    </span>
+  </p>
 </p>
 
 {% include group-by-array collection=site.posts field="categories" %}
