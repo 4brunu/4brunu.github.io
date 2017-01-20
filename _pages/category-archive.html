@@ -5,6 +5,22 @@ title: "Posts by Category"
 author_profile: true
 ---
 
+<!-- https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/category-list.html -->
+<!-- https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_pages/categories.html  -->
+{% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign categories_list = site_categories | split:',' | sort %}
+
+<p class="page__taxonomy">
+  <span itemprop="keywords">
+    {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+      {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
+      <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | absolute_url }}" class="page__taxonomy-item" rel="tag">{{ this_word }}
+        <span>({{ site.categories[this_word].size }})</span>
+      </a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+    {% endunless %}{% endfor %}
+  </span>
+</p>
+
 {% include group-by-array collection=site.posts field="categories" %}
 
 {% for category in group_names %}
