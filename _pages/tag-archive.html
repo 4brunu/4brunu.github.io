@@ -15,12 +15,10 @@ author_profile: true
     <span itemprop="keywords">
       {% for item in (0..site.tags.size) %}{% unless forloop.last %}
         {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-        <a href="#{{ this_word | slugify | downcase }}" class="page__taxonomy-item" rel="tag">{{ this_word }}</a>
-        <!--
+        <!-- <a href="#{{ this_word | slugify | downcase }}" class="page__taxonomy-item" rel="tag">{{ this_word }}</a> -->
         <a href="#{{ this_word | slugify | downcase }}" class="page__taxonomy-item" rel="tag">{{ this_word }}
           <span>({{ site.tags[this_word].size }})</span>
         </a>
-        -->
         <!-- {% unless forloop.last %}<span class="sep">, </span>{% endunless %} -->
       {% endunless %}{% endfor %}
     </span>
