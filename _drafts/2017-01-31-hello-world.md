@@ -1,19 +1,19 @@
 ---
 title:  "Hello World!"
-date:   2017-01-18 17:15:14 +0000
-categories: jekyll update
+date:   2017-01-31 18:00:00 +0000
+categories: blog
 ---
 
 Hi, this is my first blog post!
 
 In this blog you will find content related to my experience as software developer.
 
-Last year was a great year for me, because I had the opportunity to try and learn a lot new things, like reuse the business logic in c++ on iOS and Android, new Software Software architectures (MVP and MVVM), Fastlane, Jenkins and Travis for Continuous Integration and Continuous Delivery, among others, which I'm planning to write here.
+Last year was a great year for me, because I had the opportunity to try and learn a lot new things, like:
+- Reuse the business logic in c++ on iOS and Android using [Djinni](https://github.com/dropbox/djinni)
+- New Software Software architectures (MVP and MVVM)
+- Fastlane, Jenkins and Travis for Continuous Integration and Continuous Delivery
+among others, which I'm planning to write here.
 
-I received lot's of help from the community, like [Fastlane](https://github.com/fastlane/fastlane), [Djinni](https://github.com/dropbox/djinni) and some slack group's like [ios.slack.com](ios.slack.com), [androidtalks.slack.com](androidtalks.slack.com), [mobilecpp.slack.com](mobilecpp.slack.com).
+To do the things I wrote above, I received lot's of help from the community like [Fastlane](https://github.com/fastlane/fastlane), [Djinni](https://github.com/dropbox/djinni), some slack channels like [ios.slack.com](ios.slack.com), [androidtalks.slack.com](androidtalks.slack.com), [mobilecpp.slack.com](mobilecpp.slack.com), and that gave me motivation to give something back to the community.
 
-This blog born of my desire to give back something good to the community, since I got a lot from it.
-
-The opinions expressed here are my own.
-
-See you soon on the next post!
+This blog is hosted on [Github Pages](https://pages.github.com) and it's built using [Jekyll](https://jekyllrb.com) and [Travis-CI](https://travis-ci.org), which I'm going to talk in another blog post.
