@@ -4,6 +4,8 @@ date:   2017-01-31 18:00:00 +0000
 categories: blog jekyll travis-ci github-pages
 ---
 
+> This is not suppost to be a step by step tutorial, but my experience and some hints on how you can archive the same thing.
+
 When I was setting up this blog, I wanted to use Github Pages with Jekyll.
 I follow some tutorials, forked a few [different](https://github.com/Huxpro/huxpro.github.io) [themes](https://biomadeira.github.io/jasper/), but it felt a hack to fork a repository, keep it update with original, making changes, resolving merge conflicts, bahhh :S, that was something that I didn't want to do, for a simple blog.
 
