@@ -1,7 +1,8 @@
 ---
 title:  "Blog setup (Jekyll + Gem-based themes + Github Pages + Travis-CI)"
 date:   2017-01-31 18:00:00 +0000
-categories: blog jekyll travis-ci github-pages
+categories: blog 
+tags: jekyll travis-ci github-pages
 ---
 
 > This is not suppost to be a step by step tutorial, but my experience and some hints on how you can archive the same thing.
