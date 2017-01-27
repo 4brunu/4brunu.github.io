@@ -9,7 +9,7 @@ Hi, this is my first blog post!
 
 In this blog you will find content related to my experience as software developer.
 
-Last year was a great year for me because I had the opportunity to try and learn a lot new things, like:
+Last year I had the opportunity to try and learn a lot new things, like:
 - Reuse the business logic in c++ on iOS and Android using [Djinni](https://github.com/dropbox/djinni)
 - New Software Software architectures (MVP and MVVM)
 - Fastlane, Jenkins and Travis for Continuous Integration and Continuous Delivery
