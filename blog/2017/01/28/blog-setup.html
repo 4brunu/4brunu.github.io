@@ -327,11 +327,19 @@ Basically if I perform the Jekyll build outside of github, like on my local mach
 
 <p>I followed this <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">guide</a> especially the sections <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#ruby-gem-method">Ruby Gem Method</a> and <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#setup-your-site">Setup Your Site</a>.</p>
 
-<p>The most important files to get started are:
--   <a href="https://github.com/4brunu/4brunu.github.io/blob/source/_config.yml"><code class="highlighter-rouge">_config.yml</code></a> for blog configuration (modified from <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml">https://github.com/mmistakes/minimal-mistakes</a>)
--   <a href="https://github.com/4brunu/4brunu.github.io/blob/source/.travis.yml"><code class="highlighter-rouge">.travis.yml</code></a> for Travis-CI configuration (modified from <a href="https://github.com/biomadeira/jasper/blob/master/.travis.yml">https://github.com/biomadeira/jasper/blob/master/.travis.yml</a>)
--   <a href="https://github.com/4brunu/4brunu.github.io/blob/source/Rakefile"><code class="highlighter-rouge">Rakefile</code></a> which is invoked by Travis-CI to build Jekyll and push the <code class="highlighter-rouge">_site</code> directory to <a href="https://github.com/4brunu/4brunu.github.io/tree/master"><code class="highlighter-rouge">master branch</code></a> (modified from <a href="https://github.com/biomadeira/jasper/blob/master/Rakefile">https://github.com/biomadeira/jasper/blob/master/Rakefile</a>)
--   <a href="https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile"><code class="highlighter-rouge">gemfile</code></a> where I put my dependencies like <a href="https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile#L3-L4">Github Pages or Jekyll</a>, <a href="https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile#L8">Gem-based Theme</a>, and some <a href="https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile#L7">build dependencies</a></p>
+<p>The most important files to get started are:</p>
+
+<ul>
+  <li>
+<a href="https://github.com/4brunu/4brunu.github.io/blob/source/_config.yml"><code class="highlighter-rouge">_config.yml</code></a> for blog configuration (modified from <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml">https://github.com/mmistakes/minimal-mistakes</a>)</li>
+  <li>
+<a href="https://github.com/4brunu/4brunu.github.io/blob/source/.travis.yml"><code class="highlighter-rouge">.travis.yml</code></a> for Travis-CI configuration (modified from <a href="https://github.com/biomadeira/jasper/blob/master/.travis.yml">https://github.com/biomadeira/jasper/blob/master/.travis.yml</a>)</li>
+  <li>
+<a href="https://github.com/4brunu/4brunu.github.io/blob/source/Rakefile"><code class="highlighter-rouge">Rakefile</code></a> which is invoked by Travis-CI to build Jekyll and push the <code class="highlighter-rouge">_site</code> directory to <a href="https://github.com/4brunu/4brunu.github.io/tree/master"><code class="highlighter-rouge">master branch</code></a> (modified from <a href="https://github.com/biomadeira/jasper/blob/master/Rakefile">https://github.com/biomadeira/jasper/blob/master/Rakefile</a>)</li>
+  <li>
+<a href="https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile"><code class="highlighter-rouge">gemfile</code></a> where I put my dependencies like <a href="https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile#L3-L4">Github Pages or Jekyll</a>, <a href="https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile#L8">Gem-based Theme</a>, and some <a href="https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile#L7">build dependencies</a>
+</li>
+</ul>
 
 <p>And after some tweaking and failed build’s, I got it working! <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20" align="absmiddle"> <img class="emoji" title=":tada:" alt=":tada:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f389.png" height="20" width="20" align="absmiddle"> <img class="emoji" title=":rocket:" alt=":rocket:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f680.png" height="20" width="20" align="absmiddle"></p>
 
