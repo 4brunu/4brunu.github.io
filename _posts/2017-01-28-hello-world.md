@@ -12,7 +12,7 @@ In this blog you will find content related to my experience as software develope
 Last year I had the opportunity to try and learn a lot of new things, like:
 
 - Reuse the business logic in C++ on iOS and Android using [Djinni](https://github.com/dropbox/djinni)
-- New Software Software architectures ([MVP](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter) and [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel))
+- New Software architectures ([MVP](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter) and [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel))
 - [Fastlane](https://github.com/fastlane/fastlane), [Jenkins](https://jenkins.io) and [Travis-CI](https://travis-ci.org) for [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) and [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery)
 among others, which I'm planning to write here.
 
