@@ -20,7 +20,7 @@ Then I find out that since version 3.2, Jekyll start supporting [Gem-based theme
 
 > Note: Not all Jekyll themes are supported. For a list of Jekyll themes that are supported by GitHub Pages, see [https://pages.github.com/themes](https://pages.github.com/themes).
 >
-> - <cite>[Adding a Jekyll theme to your GitHub Pages site](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)</cite>
+> <cite>[Adding a Jekyll theme to your GitHub Pages site](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)</cite>
 
 [Github Pages](https://pages.github.com/) only support a small number of [themes](https://pages.github.com/themes/), which made me return to the original plan of forking a repository.
 
@@ -28,12 +28,12 @@ Then I find out that since version 3.2, Jekyll start supporting [Gem-based theme
 
 After a while, when I was trying a new [theme](https://github.com/mmistakes/minimal-mistakes) I found this [github issue](https://github.com/mmistakes/minimal-mistakes/issues/662).
 
-> <cite>Question:</cite> Use with GH pages without requiring fork?
+> Question: Use with GH pages without requiring fork?
 >
-> <cite>Answer:</cite> ... The problem is GitHub Pages doesn't currently support 3rd party theme gems. Similar to how they don't allow Jekyll plugins (except for a few that have been whitelisted). So instead of pushing commits to GH and having it build your site, you need to build it locally and push the contents of your _site folder.
+> Answer: ... The problem is GitHub Pages doesn't currently support 3rd party theme gems. Similar to how they don't allow Jekyll plugins (except for a few that have been whitelisted). So instead of pushing commits to GH and having it build your site, you need to build it locally and push the contents of your _site folder.
 > ... A lot of people use CI services like Travis to build their site and deploy to GH.
 >
-> - <cite>[Question: Use with GH pages without requiring fork? · Issue #662 · mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/issues/662)<cite>
+> <cite>[Question: Use with GH pages without requiring fork? · Issue #662 · mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/issues/662)<cite>
 
 This was exactly what I was trying to archive!
 Basically if I perform the Jekyll build outside of github, like on my local machine or [Travis-CI](https://travis-ci.org/), I could still use Jekyll Gem-based themes, and push to github only the generated file inside `_site`.
