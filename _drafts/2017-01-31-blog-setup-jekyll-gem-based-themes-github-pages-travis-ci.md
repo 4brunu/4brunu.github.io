@@ -7,13 +7,13 @@ tags: jekyll travis-ci github-pages
 
 > TL;DR. GitHub Pages doesn't currently support 3rd party theme gems. You can workaround this, by building Jekyll in your local machine or in a CI service like Travis-CI and push to Github the generated files inside `_site`. :rocket:
 >
-> WARNING: This is not suppost to be a step by step tutorial, but my experience and some hints on how you can archive the same thing.
+> WARNING: This is not supposed to be a step by step tutorial, but my experience and some hints on how you can archive the same thing.
 
-### The Problem
+### The initial idea
 
 When I was setting up this blog, I wanted to use [Github Pages](https://pages.github.com/) and [Jekyll](http://jekyllrb.com).
 
-I follow some tutorials, forked a few [different](https://github.com/Huxpro/huxpro.github.io) [themes](https://biomadeira.github.io/jasper/), but it felt a hack to fork a repository, keep it update with original, making local changes which could result in future conflits, bahhh :unamused:
+I follow some tutorials, forked a few [different](https://github.com/Huxpro/huxpro.github.io) [themes](https://biomadeira.github.io/jasper/), but it felt a hack to fork a repository, keep it update with original, making local changes which could result in future conflicts, bahhh :unamused:
 That's something that I didn't want to do for a simple blog... I want to apply the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle).
 
 Then I find out that since version 3.2, Jekyll start supporting [Gem-based themes](http://jekyllrb.com/docs/themes/), which seems what I was looking for, but after a quick search I find out this:
@@ -24,7 +24,7 @@ Then I find out that since version 3.2, Jekyll start supporting [Gem-based theme
 
 [Github Pages](https://pages.github.com/) only support a small number of [themes](https://pages.github.com/themes/), which made me return to the original plan of forking a repository.
 
-### The Solution
+### A better way
 
 After a while, when I was trying a new [theme](https://github.com/mmistakes/minimal-mistakes) I found this [github issue](https://github.com/mmistakes/minimal-mistakes/issues/662).
 
