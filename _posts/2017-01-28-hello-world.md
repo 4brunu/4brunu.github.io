@@ -18,4 +18,4 @@ among others, which I'm planning to write here.
 
 To do the things I wrote above, I received lot's of help from the community like [Fastlane](https://github.com/fastlane/fastlane), [Djinni](https://github.com/dropbox/djinni), some slack channels like [ios.slack.com](ios.slack.com), [androidtalks.slack.com](androidtalks.slack.com), [mobilecpp.slack.com](mobilecpp.slack.com), and that gave me motivation to give something back to the community.
 
-This blog is hosted on [Github Pages](https://pages.github.com) and it's built using [Jekyll](https://jekyllrb.com) and [Travis-CI](https://travis-ci.org), which I'm going to talk in the next blog post.
+This blog is hosted on [Github Pages](https://pages.github.com) and it's built using [Jekyll](https://jekyllrb.com) and [Travis-CI](https://travis-ci.org), which I'm going to talk about on the next blog post.
