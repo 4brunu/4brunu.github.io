@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://4brunu.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://4brunu.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://4brunu.github.io/" rel="alternate" type="text/html" /><updated>2017-01-28T23:22:28+00:00</updated><id>https://4brunu.github.io//</id><title type="html">4brunu.github.io</title><subtitle>iOS, Android and Code</subtitle><author><name>Bruno Coelho</name></author><entry><title type="html">Blog setup</title><link href="https://4brunu.github.io/blog/2017/01/28/blog-setup" rel="alternate" type="text/html" title="Blog setup" /><published>2017-01-28T23:00:00+00:00</published><updated>2017-01-28T23:00:00+00:00</updated><id>https://4brunu.github.io/blog/2017/01/28/blog-setup</id><content type="html" xml:base="https://4brunu.github.io/blog/2017/01/28/blog-setup">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://4brunu.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://4brunu.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://4brunu.github.io/" rel="alternate" type="text/html" /><updated>2017-01-28T23:26:37+00:00</updated><id>https://4brunu.github.io//</id><title type="html">4brunu.github.io</title><subtitle>iOS, Android and Code</subtitle><author><name>Bruno Coelho</name></author><entry><title type="html">Blog setup</title><link href="https://4brunu.github.io/blog/2017/01/28/blog-setup" rel="alternate" type="text/html" title="Blog setup" /><published>2017-01-28T23:00:00+00:00</published><updated>2017-01-28T23:00:00+00:00</updated><id>https://4brunu.github.io/blog/2017/01/28/blog-setup</id><content type="html" xml:base="https://4brunu.github.io/blog/2017/01/28/blog-setup">&lt;blockquote&gt;
   &lt;p&gt;TL;DR. GitHub Pages doesn’t currently support 3rd party theme gems. You can workaround this, by building Jekyll in your local machine or in a CI service like Travis-CI and push to Github the generated files inside &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt;. :rocket:&lt;/p&gt;
 
   &lt;p&gt;WARNING: This is not supposed to be a step by step tutorial, but my experience and some hints on how you can archive the same thing.&lt;/p&gt;
@@ -16,9 +16,7 @@ That’s something that I didn’t want to do for a simple blog… I want to app
 &lt;blockquote&gt;
   &lt;p&gt;Note: Not all Jekyll themes are supported. For a list of Jekyll themes that are supported by GitHub Pages, see &lt;a href=&quot;https://pages.github.com/themes&quot;&gt;https://pages.github.com/themes&lt;/a&gt;.&lt;/p&gt;
 
-  &lt;ul&gt;
-    &lt;li&gt;&lt;cite&gt;&lt;a href=&quot;https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/&quot;&gt;Adding a Jekyll theme to your GitHub Pages site&lt;/a&gt;&lt;/cite&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+  &lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/&quot;&gt;Adding a Jekyll theme to your GitHub Pages site&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; only support a small number of &lt;a href=&quot;https://pages.github.com/themes/&quot;&gt;themes&lt;/a&gt;, which made me return to the original plan of forking a repository.&lt;/p&gt;
@@ -28,14 +26,12 @@ That’s something that I didn’t want to do for a simple blog… I want to app
 &lt;p&gt;After a while, when I was trying a new &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot;&gt;theme&lt;/a&gt; I found this &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/662&quot;&gt;github issue&lt;/a&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;cite&gt;Question:&lt;/cite&gt; Use with GH pages without requiring fork?&lt;/p&gt;
+  &lt;p&gt;Question: Use with GH pages without requiring fork?&lt;/p&gt;
 
-  &lt;p&gt;&lt;cite&gt;Answer:&lt;/cite&gt; … The problem is GitHub Pages doesn’t currently support 3rd party theme gems. Similar to how they don’t allow Jekyll plugins (except for a few that have been whitelisted). So instead of pushing commits to GH and having it build your site, you need to build it locally and push the contents of your _site folder.
+  &lt;p&gt;Answer: … The problem is GitHub Pages doesn’t currently support 3rd party theme gems. Similar to how they don’t allow Jekyll plugins (except for a few that have been whitelisted). So instead of pushing commits to GH and having it build your site, you need to build it locally and push the contents of your _site folder.
 … A lot of people use CI services like Travis to build their site and deploy to GH.&lt;/p&gt;
 
-  &lt;ul&gt;
-    &lt;li&gt;&lt;cite&gt;&lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/662&quot;&gt;Question: Use with GH pages without requiring fork? · Issue #662 · mmistakes/minimal-mistakes&lt;/a&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/cite&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+  &lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/662&quot;&gt;Question: Use with GH pages without requiring fork? · Issue #662 · mmistakes/minimal-mistakes&lt;/a&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;This was exactly what I was trying to archive!
