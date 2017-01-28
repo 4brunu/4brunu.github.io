@@ -15,4 +15,4 @@ This is my personal blog, that born of my desire to give something back to the c
 
 Here you can find some of my experience with mainly iOS and Android development.
 
-The opinions expressed here are my own.
+Please note, that the opinions expressed here are my own.
