@@ -13,7 +13,7 @@ tags: jekyll travis-ci github-pages
 
 When I was setting up this blog, I wanted to use [Github Pages](https://pages.github.com/) and [Jekyll](http://jekyllrb.com).
 
-I follow some tutorials, forked a few [different](https://github.com/Huxpro/huxpro.github.io) [themes](https://biomadeira.github.io/jasper/), but it felt a hack to fork a repository, keep it update with original, making local changes which could result in future conflicts, bahhh :unamused:
+I follow some tutorials, forked a few [different](https://github.com/Huxpro/huxpro.github.io) [themes](https://biomadeira.github.io/jasper/), but it felt a hack to fork a repository, keep it update with original, making local changes which could result in future conflicts, bah :unamused:
 That's something that I didn't want to do for a simple blog... I want to apply the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle).
 
 Then I find out that since version 3.2, Jekyll start supporting [Gem-based themes](http://jekyllrb.com/docs/themes/), which seems what I was looking for, but after a quick search I find out this:
