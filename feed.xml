@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://4brunu.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://4brunu.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://4brunu.github.io/" rel="alternate" type="text/html" /><updated>2017-01-28T22:56:47+00:00</updated><id>https://4brunu.github.io//</id><title type="html">4brunu.github.io</title><subtitle>iOS, Android and Code</subtitle><author><name>Bruno Coelho</name></author><entry><title type="html">Hello World!</title><link href="https://4brunu.github.io/blog/2017/01/28/hello-world" rel="alternate" type="text/html" title="Hello World!" /><published>2017-01-28T22:00:00+00:00</published><updated>2017-01-28T22:00:00+00:00</updated><id>https://4brunu.github.io/blog/2017/01/28/hello-world</id><content type="html" xml:base="https://4brunu.github.io/blog/2017/01/28/hello-world">&lt;p&gt;Hi, this is my first blog post!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://4brunu.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://4brunu.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://4brunu.github.io/" rel="alternate" type="text/html" /><updated>2017-01-28T23:09:18+00:00</updated><id>https://4brunu.github.io//</id><title type="html">4brunu.github.io</title><subtitle>iOS, Android and Code</subtitle><author><name>Bruno Coelho</name></author><entry><title type="html">Blog setup</title><link href="https://4brunu.github.io/blog/2017/01/28/blog-setup" rel="alternate" type="text/html" title="Blog setup" /><published>2017-01-28T23:00:00+00:00</published><updated>2017-01-28T23:00:00+00:00</updated><id>https://4brunu.github.io/blog/2017/01/28/blog-setup</id><content type="html" xml:base="https://4brunu.github.io/blog/2017/01/28/blog-setup">&lt;blockquote&gt;
+  &lt;p&gt;TL;DR. GitHub Pages doesn’t currently support 3rd party theme gems. You can workaround this, by building Jekyll in your local machine or in a CI service like Travis-CI and push to Github the generated files inside &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt;. :rocket:&lt;/p&gt;
+
+  &lt;p&gt;WARNING: This is not supposed to be a step by step tutorial, but my experience and some hints on how you can archive the same thing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;the-initial-idea&quot;&gt;The initial idea&lt;/h3&gt;
+
+&lt;p&gt;When I was setting up this blog, I wanted to use &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; and &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I follow some tutorials, forked a few &lt;a href=&quot;https://github.com/Huxpro/huxpro.github.io&quot;&gt;different&lt;/a&gt; &lt;a href=&quot;https://biomadeira.github.io/jasper/&quot;&gt;themes&lt;/a&gt;, but it felt a hack to fork a repository, keep it update with original, making local changes which could result in future conflicts, bah :unamused:
+That’s something that I didn’t want to do for a simple blog… I want to apply the &lt;a href=&quot;https://en.wikipedia.org/wiki/KISS_principle&quot;&gt;KISS principle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then I find out that since version 3.2, Jekyll start supporting &lt;a href=&quot;http://jekyllrb.com/docs/themes/&quot;&gt;Gem-based themes&lt;/a&gt;, which seems what I was looking for, but after a quick search I find out this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: Not all Jekyll themes are supported. For a list of Jekyll themes that are supported by GitHub Pages, see &lt;a href=&quot;https://pages.github.com/themes&quot;&gt;https://pages.github.com/themes&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;– &lt;cite&gt;&lt;a href=&quot;https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/&quot;&gt;Adding a Jekyll theme to your GitHub Pages site&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; only support a small number of &lt;a href=&quot;https://pages.github.com/themes/&quot;&gt;themes&lt;/a&gt;, which made me return to the original plan of forking a repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-better-way&quot;&gt;A better way&lt;/h3&gt;
+
+&lt;p&gt;After a while, when I was trying a new &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot;&gt;theme&lt;/a&gt; I found this &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/662&quot;&gt;github issue&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;cite&gt;Question:&lt;/cite&gt; Use with GH pages without requiring fork?&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;Answer:&lt;/cite&gt; … The problem is GitHub Pages doesn’t currently support 3rd party theme gems. Similar to how they don’t allow Jekyll plugins (except for a few that have been whitelisted). So instead of pushing commits to GH and having it build your site, you need to build it locally and push the contents of your _site folder.
+… A lot of people use CI services like Travis to build their site and deploy to GH.&lt;/p&gt;
+
+  &lt;p&gt;– &lt;cite&gt;&lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/662&quot;&gt;Question: Use with GH pages without requiring fork? · Issue #662 · mmistakes/minimal-mistakes&lt;/a&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This was exactly what I was trying to archive!
+Basically if I perform the Jekyll build outside of github, like on my local machine or &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis-CI&lt;/a&gt;, I could still use Jekyll Gem-based themes, and push to github only the generated file inside &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I already tried the &lt;a href=&quot;https://biomadeira.github.io/jasper/&quot;&gt;Jasper theme&lt;/a&gt; with &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis-CI&lt;/a&gt; so maybe that wouldn’t be that hard.&lt;/p&gt;
+
+&lt;p&gt;I followed this &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&quot;&gt;guide&lt;/a&gt; especially the sections &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#ruby-gem-method&quot;&gt;Ruby Gem Method&lt;/a&gt; and &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#setup-your-site&quot;&gt;Setup Your Site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The most important files to get started are:
+-   &lt;a href=&quot;https://github.com/4brunu/4brunu.github.io/blob/source/_config.yml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;&lt;/a&gt; for blog configuration (modified from &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml&quot;&gt;https://github.com/mmistakes/minimal-mistakes&lt;/a&gt;)
+-   &lt;a href=&quot;https://github.com/4brunu/4brunu.github.io/blob/source/.travis.yml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt;&lt;/a&gt; for Travis-CI configuration (modified from &lt;a href=&quot;https://github.com/biomadeira/jasper/blob/master/.travis.yml&quot;&gt;https://github.com/biomadeira/jasper/blob/master/.travis.yml&lt;/a&gt;)
+-   &lt;a href=&quot;https://github.com/4brunu/4brunu.github.io/blob/source/Rakefile&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Rakefile&lt;/code&gt;&lt;/a&gt; which is invoked by Travis-CI to build Jekyll and push the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; directory to &lt;a href=&quot;https://github.com/4brunu/4brunu.github.io/tree/master&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;master branch&lt;/code&gt;&lt;/a&gt; (modified from &lt;a href=&quot;https://github.com/biomadeira/jasper/blob/master/Rakefile&quot;&gt;https://github.com/biomadeira/jasper/blob/master/Rakefile&lt;/a&gt;)
+-   &lt;a href=&quot;https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gemfile&lt;/code&gt;&lt;/a&gt; where I put my dependencies like &lt;a href=&quot;https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile#L3-L4&quot;&gt;Github Pages or Jekyll&lt;/a&gt;, &lt;a href=&quot;https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile#L8&quot;&gt;Gem-based Theme&lt;/a&gt;, and some &lt;a href=&quot;https://github.com/4brunu/4brunu.github.io/blob/source/Gemfile#L7&quot;&gt;build dependencies&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And after some tweaking and failed build’s, I got it working! :smile: :tada: :rocket:&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;In general I’m satisfied with the setup, Travis-CI does all the heavy lifting for me, it builds the site in every commit, although I would like that the build times were faster, currently they are around two and half minutes.&lt;/p&gt;
+
+&lt;p&gt;If you have any suggestion to improve, or any issue trying to reproduce what I describe, please let me know.&lt;/p&gt;</content><author><name>Bruno Coelho</name></author><category term="jekyll" /><category term="travis-ci" /><category term="github-pages" /><summary type="html">TL;DR. GitHub Pages doesn’t currently support 3rd party theme gems. You can workaround this, by building Jekyll in your local machine or in a CI service like Travis-CI and push to Github the generated files inside _site. :rocket:
+
+  WARNING: This is not supposed to be a step by step tutorial, but my experience and some hints on how you can archive the same thing.</summary></entry><entry><title type="html">Hello World!</title><link href="https://4brunu.github.io/blog/2017/01/28/hello-world" rel="alternate" type="text/html" title="Hello World!" /><published>2017-01-28T22:00:00+00:00</published><updated>2017-01-28T22:00:00+00:00</updated><id>https://4brunu.github.io/blog/2017/01/28/hello-world</id><content type="html" xml:base="https://4brunu.github.io/blog/2017/01/28/hello-world">&lt;p&gt;Hi, this is my first blog post!&lt;/p&gt;
 
 &lt;p&gt;In this blog you will find content related to my experience as software developer.&lt;/p&gt;
 
