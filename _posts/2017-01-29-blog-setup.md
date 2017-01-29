@@ -1,5 +1,5 @@
 ---
-title:  "Jekyll | Gem-based themes | Github Pages | Travis-CI"
+title:  "Jekyll Gem-based themes Github Pages"
 date:   2017-01-29 10:00:00 +0000
 categories: blog
 tags: jekyll travis-ci github-pages
