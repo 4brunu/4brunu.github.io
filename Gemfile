@@ -5,4 +5,4 @@ gem 'github-pages', '117'
 
 # gem 'bundler', '1.3.7'
 gem 'rake', '12.0.0'
-gem 'minimal-mistakes-jekyll', '4.2.1'
+gem 'minimal-mistakes-jekyll', '4.1.1'
