@@ -43,7 +43,6 @@ I already tried the [Jasper theme](https://biomadeira.github.io/jasper/) with [T
 I followed this [guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) especially the sections [Ruby Gem Method](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#ruby-gem-method) and [Setup Your Site](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#setup-your-site).
 
 The most important files to get started are:
-
 -   [`_config.yml`](https://github.com/4brunu/4brunu.github.io/blob/source/_config.yml) for blog configuration (modified from [https://github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml))
 -   [`.travis.yml`](https://github.com/4brunu/4brunu.github.io/blob/source/.travis.yml) for Travis-CI configuration (modified from [https://github.com/biomadeira/jasper/blob/master/.travis.yml](https://github.com/biomadeira/jasper/blob/master/.travis.yml))
 -   [`Rakefile`](https://github.com/4brunu/4brunu.github.io/blob/source/Rakefile) which is invoked by Travis-CI to build Jekyll and push the `_site` directory to [`master branch`](https://github.com/4brunu/4brunu.github.io/tree/master) (modified from [https://github.com/biomadeira/jasper/blob/master/Rakefile](https://github.com/biomadeira/jasper/blob/master/Rakefile))
