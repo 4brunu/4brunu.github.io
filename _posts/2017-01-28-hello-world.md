@@ -1,8 +1,7 @@
 ---
-title:  "Hello World!"
-date:   2017-01-28 22:00:00 +0000
-categories: blog
-tags: jekyll github-pages
+title: "Hello World"
+date: 2017-01-28 22:00:00 +0000
+tags: blog jekyll github-pages
 ---
 
 Hi, this is my first blog post!

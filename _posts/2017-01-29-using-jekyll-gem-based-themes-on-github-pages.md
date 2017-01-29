@@ -1,8 +1,7 @@
 ---
-title:  "Using Jekyll gem-based themes on Github Pages"
-date:   2017-01-29 10:00:00 +0000
-categories: blog
-tags: jekyll travis-ci github-pages
+title: "Using Jekyll gem-based themes on Github Pages"
+date: 2017-01-29 10:00:00 +0000
+tags: blog jekyll travis-ci github-pages
 ---
 
 > TL;DR. GitHub Pages doesn't currently support 3rd party theme gems. You can workaround this, by building Jekyll in your local machine or in a CI service like Travis-CI and push to Github the generated files inside `_site`. :rocket:
