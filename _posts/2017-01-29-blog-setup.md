@@ -1,5 +1,5 @@
 ---
-title:  "Jekyll gem based"
+title:  "Blog setup"
 date:   2017-01-29 10:00:00 +0000
 categories: blog
 tags: jekyll travis-ci github-pages
