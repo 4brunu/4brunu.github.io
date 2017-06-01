@@ -1,4 +1,10 @@
 <!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.1 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -22,6 +28,8 @@
 
 
 
+
+<meta name="author" content="Bruno Coelho">
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="4brunu.github.io">
@@ -47,6 +55,8 @@
     
   
 
+  
+    <meta name="twitter:creator" content="@Bruno Coelho">
   
 
 
@@ -103,6 +113,21 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="https://4brunu.github.io/assets/css/main.css">
 
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
 <meta http-equiv="cleartype" content="on">
     <!-- start custom head snippets -->
 
@@ -128,9 +153,8 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <a class="site-title" href="https://4brunu.github.io/">4brunu.github.io</a>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://4brunu.github.io/">4brunu.github.io</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://4brunu.github.io/about/">About</a></li>
@@ -142,6 +166,7 @@
             <li class="masthead__menu-item"><a href="https://4brunu.github.io/tags/">Tags</a></li>
           
         </ul>
+        <button><div class="navicon"></div></button>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
@@ -380,6 +405,7 @@ among others, which I’m planning to write here.</li>
     <section id="disqus_thread"></section>
   
 </div>
+
     
   </article>
 
