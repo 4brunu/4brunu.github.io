@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.4.1 by Michael Rose
-  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.11.1 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
@@ -9,35 +9,17 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin SEO -->
-
-
-
-
-
-
-
-
-
-<title>Posts by Year - 4brunu.github.io</title>
-
-
-
-
+<!-- begin _includes/seo.html --><title>Posts by Year - 4brunu.github.io</title>
 <meta name="description" content="iOS, Android and Code">
 
 
 
-
-<meta name="author" content="Bruno Coelho">
-
+<meta property="og:type" content="website">
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="4brunu.github.io">
 <meta property="og:title" content="Posts by Year">
+<meta property="og:url" content="https://4brunu.github.io/year-archive/">
 
-
-  <link rel="canonical" href="https://4brunu.github.io/year-archive/">
-  <meta property="og:url" content="https://4brunu.github.io/year-archive/">
 
 
 
@@ -54,19 +36,19 @@
   
 
   
-    <meta name="twitter:creator" content="@Bruno Coelho">
+
+
+
+
+
+
+
+  
+
   
 
 
-
-  
-
-  
-
-
-
-
-
+<link rel="canonical" href="https://4brunu.github.io/year-archive/">
 
 
 
@@ -76,11 +58,11 @@
 
   <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "name" : "Bruno Coelho",
-      "url" : "https://4brunu.github.io",
-      "sameAs" : null
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Bruno Coelho",
+      "url": "https://4brunu.github.io",
+      "sameAs": null
     }
   </script>
 
@@ -91,10 +73,11 @@
 
 
 
-<!-- end SEO -->
+
+<!-- end _includes/seo.html -->
 
 
-<link href="https://4brunu.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="4brunu.github.io Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="4brunu.github.io Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -106,7 +89,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://4brunu.github.io/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -123,7 +106,7 @@
   </style>
 <![endif]-->
 
-<meta http-equiv="cleartype" content="on">
+
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
@@ -142,33 +125,51 @@
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://4brunu.github.io/">4brunu.github.io</a>
+        <a class="site-title" href="/">4brunu.github.io</a>
         <ul class="visible-links">
           
             
-            <li class="masthead__menu-item"><a href="https://4brunu.github.io/about/">About</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://4brunu.github.io/about/" >About</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://4brunu.github.io/year-archive/">Archive</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://4brunu.github.io/year-archive/" >Archive</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://4brunu.github.io/tags/">Tags</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://4brunu.github.io/tags/" >Tags</a>
+            </li>
           
         </ul>
-        <button><div class="navicon"></div></button>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
 </div>
 
-    
+    <div class="initial-content">
+      
 
 
 
@@ -177,18 +178,23 @@
   <div class="sidebar sticky">
   
 
+
 <div itemscope itemtype="http://schema.org/Person">
 
   
     <div class="author__avatar">
       
-        <img src="https://4brunu.github.io/assets/images/bio-photo.jpg" class="author__avatar" alt="Bruno Coelho" itemprop="image">
+
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Bruno Coelho" itemprop="image">
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">Bruno Coelho</h3>
+    
+      <h3 class="author__name" itemprop="name">Bruno Coelho</h3>
+    
     
       <p class="author__bio" itemprop="description">
         Software Engineer | iOS | Android
@@ -201,7 +207,7 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Portugal</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Portugal</span>
         </li>
       
 
@@ -214,7 +220,7 @@
       
         <li>
           <a href="https://twitter.com/4brunu" itemprop="sameAs">
-            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
           </a>
         </li>
       
@@ -226,7 +232,7 @@
       
         <li>
           <a href="https://www.linkedin.com/in/4brunu" itemprop="sameAs">
-            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
           </a>
         </li>
       
@@ -242,15 +248,17 @@
       
         <li>
           <a href="https://github.com/4brunu" itemprop="sameAs">
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
           </a>
         </li>
       
 
       
+
+      
         <li>
           <a href="https://www.stackoverflow.com/users/976628/bruno-coelho" itemprop="sameAs">
-            <i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow
+            <i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stack Overflow
           </a>
         </li>
       
@@ -280,7 +288,7 @@
       <!--
   <li>
     <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
 -->
@@ -294,7 +302,7 @@
 
   <div class="archive">
     
-      <h1 class="page__title">Posts by Year</h1>
+      <h1 id="page-title" class="page__title">Posts by Year</h1>
     
     
 
@@ -312,7 +320,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://4brunu.github.io/blog/2017/01/29/using-jekyll-gem-based-themes-on-github-pages" rel="permalink">Using Jekyll gem-based themes on Github Pages
+        <a href="/blog/2017/01/29/using-jekyll-gem-based-themes-on-github-pages" rel="permalink">Using Jekyll gem-based themes on Github Pages
 </a>
       
     </h2>
@@ -333,7 +341,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://4brunu.github.io/blog/2017/01/28/hello-world" rel="permalink">Hello World
+        <a href="/blog/2017/01/28/hello-world" rel="permalink">Hello World
 </a>
       
     </h2>
@@ -347,6 +355,14 @@
 
   </div>
 </div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+      </div>
+    
 
     <div class="page__footer">
       <footer>
@@ -359,38 +375,33 @@
       <li><strong>Follow:</strong></li>
     
     
-      <li><a href="https://twitter.com/4brunu"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      <li><a href="https://twitter.com/4brunu"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
     
     
     
-      <li><a href="http://github.com/4brunu"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="https://github.com/4brunu"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    <li><a href="https://4brunu.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2017 Bruno Coelho. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 Bruno Coelho. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
       </footer>
     </div>
 
-    <script src="https://4brunu.github.io/assets/js/main.min.js"></script>
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 
 
 
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-76819575-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 
