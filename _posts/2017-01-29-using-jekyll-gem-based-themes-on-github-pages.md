@@ -8,6 +8,10 @@ tags: blog jekyll travis-ci github-pages
 >
 > WARNING: This is not supposed to be a step by step tutorial, but my experience and some hints on how you can archive the same thing.
 
+> UPDATE: Since 29 of November 2017, GitHub Pages announced that they support Jekyll Gem-based themes that are hosted on GitHub. This means that now you have two options to use Jekyll Gem-based themes on GitHub Pages:
+> -   GitHub Pages new support for Gem-based themes [Click here for more details.](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
+> -   Building Jekyll in your local machine or in a CI service as discussed on this blog post.
+
 ### The initial idea
 
 When I was setting up this blog, I wanted to use [Github Pages](https://pages.github.com/) and [Jekyll](http://jekyllrb.com).
