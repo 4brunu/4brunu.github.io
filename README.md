@@ -4,4 +4,4 @@
 
 This is the source of my personal blog [4brunu.github.io](https://4brunu.github.io).
 
-It uses the gem based theme [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes).
+It uses the theme [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes).
