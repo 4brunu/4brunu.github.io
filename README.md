@@ -4,5 +4,6 @@
 [![Ruby](https://img.shields.io/badge/ruby-2.3.3-blue.svg?style=flat)](http://travis-ci.org/4brunu/4brunu.github.io)
 [![Jekyll](https://img.shields.io/badge/jekyll-3.3.1-blue.svg?style=flat)](https://travis-ci.org/4brunu/4brunu.github.io)
 
-This is the source of my personal blog [4brunu.github.io](https://4brunu.github.io)
-It uses the gem based theme [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)
+This is the source of my personal blog [4brunu.github.io](https://4brunu.github.io).
+
+It uses the gem based theme [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes).
