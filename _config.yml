@@ -280,6 +280,7 @@ defaults:
 
 # Settings for builing master branch with travis-ci
 # with jekyll-travis
+JEKYLL_ENV: production
 
 # Settings for deploy rake task
 # Username and repo of Github repo, e.g.
