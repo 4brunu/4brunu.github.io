@@ -4,5 +4,5 @@ source 'https://rubygems.org'
 # gem 'jekyll', '3.3.1'
 
 # gem 'bundler', '1.3.7'
-gem 'rake', '12.3.1'
-gem 'minimal-mistakes-jekyll', '4.11.2'
+gem 'rake', '13.0.6'
+gem 'minimal-mistakes-jekyll', '4.24.0'
