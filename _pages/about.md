@@ -1,6 +1,6 @@
 ---
 title: About
-permalink: /
+permalink: /index.html
 ---
 
 My name is Bruno Coelho.
