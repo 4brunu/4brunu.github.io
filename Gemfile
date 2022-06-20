@@ -1,8 +1,17 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-# gem 'github-pages', '117'
-# gem 'jekyll', '3.3.1'
+gem "github-pages", group: :jekyll_plugins
 
-# gem 'bundler', '1.3.7'
-gem 'rake', '13.0.6'
-gem 'minimal-mistakes-jekyll', '4.24.0'
+gem "tzinfo-data"
+gem "wdm", "~> 0.1.0" if Gem.win_platform?
+
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
+  gem "jekyll-feed"
+  gem "jemoji"
+  gem "jekyll-include-cache"
+  gem "jekyll-algolia"
+end
